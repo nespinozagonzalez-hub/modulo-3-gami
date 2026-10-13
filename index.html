@@ -81,5 +81,6 @@ function bindViewEvents(){document.querySelectorAll('[data-res]').forEach(b=>b.o
 function closeModal(){document.getElementById('genericModal').classList.remove('open');document.getElementById('modalBody').innerHTML=''}
 document.getElementById('startRouteBtn').addEventListener('click',()=>{document.getElementById('landing').classList.add('hidden');document.getElementById('app').classList.remove('hidden');renderAll()});document.getElementById('closeModalBtn').addEventListener('click',closeModal);document.getElementById('genericModal').addEventListener('click',e=>{if(e.target.id==='genericModal')closeModal()});buildParticles();renderAll();
 </script>
+<script src="./gami-v2-bridge.js" defer></script>
 </body>
 </html>
